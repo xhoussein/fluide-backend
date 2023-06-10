@@ -31,4 +31,5 @@ router.get("/auth/login/failed", controller.userController.loginFailed);
 router.get("/auth/logout", controller.userController.logout);
 router.post("/verify-email", auth('profile'), controller.userController.verifyEmail);
 router.post("/change-password", auth('profile'), controller.userController.changePassword)
+router.post("/reset-password", controller.userController.resetPassword)
 module.exports = router;

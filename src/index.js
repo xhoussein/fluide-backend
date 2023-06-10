@@ -61,7 +61,7 @@ wss.on("connection", function (ws) {
               response != " ###"
             ) {
               word = 1;
-              if (response == ".\n\n" || response == " \n\n") {
+              if (response == ".\n\n") {
                 ws.send(JSON.stringify("."));
                 ws.send(JSON.stringify(""));
                 ws.send(JSON.stringify(""));
@@ -72,7 +72,7 @@ wss.on("connection", function (ws) {
                   response == " ##" ||
                   response == " ###"
                 ) {
-                } else if (response == ".\n\n" || response == " \n\n") {
+                } else if (response == ".\n\n") {
                   ws.send(JSON.stringify("."));
                   ws.send(JSON.stringify(""));
                   ws.send(JSON.stringify(""));
@@ -147,7 +147,7 @@ wss.on("connection", function (ws) {
               response != " ###"
             ) {
               word = 1;
-              if (response == ".\n\n" || response == " \n\n") {
+              if (response == ".\n\n") {
                 ws.send(JSON.stringify("."));
                 ws.send(JSON.stringify(""));
                 ws.send(JSON.stringify(""));
@@ -158,7 +158,7 @@ wss.on("connection", function (ws) {
                   response == " ##" ||
                   response == " ###"
                 ) {
-                } else if (response == ".\n\n" || response == " \n\n") {
+                } else if (response == ".\n\n") {
                   ws.send(JSON.stringify("."));
                   ws.send(JSON.stringify(""));
                   ws.send(JSON.stringify(""));
